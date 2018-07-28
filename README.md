@@ -1,7 +1,14 @@
 # movie-db
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+## Implementation
+
+This app enables user to search for a movie and lists down the movies in a list, on clicking the movie list will show more details for the movie.
+
+User can upvote and downvote a movie any more of times and will be stored in localStorage
+
+Pagination will be of 6 pages in one view and gets on incrementing
+
 
 ## Prerequisites
 

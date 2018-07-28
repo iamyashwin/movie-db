@@ -1,0 +1,24 @@
+.form-container
+  form
+    = input class="input" type="text" placeholder="Search" value=query
+    button click="searchMovie" disabled=isSearching
+      | Search
+
+.movie-list
+  if isSearching
+    | Loading...
+  else
+    if movies
+      = movie-list movies=movies query=searchQuery
+
+      if isNotFirstPage
+        button.paginate click="previousPage"
+          | previous
+      each pages as |page|
+        button.paginate.paginate-numbers click="'jumpToPage' page" class="{{paginate-class current page}}"
+          = page
+      if isNotLastPage
+        button.paginate click="nextPage"
+          | next
+    if noResult
+      | No Movies Found!!

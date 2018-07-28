@@ -1,0 +1,4 @@
+.top-nav
+  div.main-text
+    | The Awesome Movie Database
+  = search-box

@@ -1,0 +1,25 @@
+.card
+  div
+    div
+      h1
+        = movie.title
+    div.text-center
+      img align="centre" src=movie.poster
+    p
+      = movie.overview
+
+    div
+      | Release Date: #{movie.date}
+    div
+      | Rating: #{movie.rating}/10
+    div
+      | Total Votes: #{movie.count}
+    div
+      | Total Up Votes: #{upvote}
+    div
+      | Total Down Votes: #{downvote}
+    div.voting-buttons
+      button click="upVote"
+        | upvote
+      button click="downVote"
+        | downvote

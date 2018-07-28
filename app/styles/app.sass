@@ -1,0 +1,161 @@
+body, html
+  height: 100%
+  font-family: 'Work Sans', sans-serif
+
+.row::after
+  content: ""
+  clear: both
+  display: table
+
+[class*="col-"]
+  float: left
+  padding: 15px
+.col-1
+  width: 8.33%
+.col-2
+  width: 16.66%
+.col-3
+  width: 25%
+.col-4
+  width: 33.33%
+.col-5
+  width: 41.66%
+.col-6
+  width: 50%
+.col-7
+  width: 58.33%
+.col-8
+  width: 66.66%
+.col-9
+  width: 75%
+.col-10
+  width: 83.33%
+.col-11
+  width: 91.66%
+.col-12
+  width: 100%
+
+button
+  cursor: pointer
+  color: #000
+  background-color: #FFF
+  border-radius: 5px
+
+.text-center
+  text-align: center
+
+.voting-buttons
+  button
+    background-color: #000
+    color: #FFF
+    height: 30px
+    font-size: 18px
+    margin: 10px
+
+
+.form-container
+  text-align: center
+  form
+    margin-top: -25px
+    .input
+      border: 2px solid #e6e6e6
+      width: 200px
+      height: 30px
+      font-size: 16px
+      padding-left: 10px
+      border-radius: 5px
+      &:hover
+        border-color: #b3b3b3
+        box-shadow: 0 0 1px #808080
+    button
+      margin-top: 0px
+      height: 30px
+      width: 100px
+      margin-left: 10px
+.table-container
+  margin-top: 100px
+  padding: 0px 100px
+  table
+    tr
+      th
+        padding: 10px
+        border: none
+        font-size: 16px
+        background-color: #ccc
+        color: #000
+        text-align: center
+      td
+        padding: 5px
+        font-size: 14px
+        border: none
+        background-color: #e5e5e5
+        border-bottom: 1px solid #ccc
+        text-align: center
+        div:not(:first-child)
+          margin-top: 5px
+          text-align: center
+
+      &:last-child
+        td
+          border-bottom: none
+
+.main-text
+  padding-top: 20px
+  color: #FFF
+  margin-left: 50px
+
+.top-nav
+  margin: -10px
+  background-color: #000
+  height: 60px
+
+.movie-list
+  margin-top: 30px
+  margin-left: 100px
+  .paginate
+    margin-left: 10px
+    width: 80px
+    background-color: #000
+    color: #FFF
+    padding: 5px
+    font-size: 16px
+  .paginate-numbers
+    width: 30px
+    &.is-active
+      background-color: blue
+
+
+
+ul.movie-list
+  margin-top: -20px
+  margin-left: -40px
+  padding-left: 0px
+  li
+    list-style-type: none
+    padding: 5px
+    background-color: #f6f8fa
+    border-radius: 3px
+    margin: 5px
+    cursor: pointer
+
+.card
+  margin-top: -40px
+  h1
+    text-align: center
+  div
+    margin-top: 20px
+
+.list-card
+  margin: 10px
+  div
+    margin-top: 10px
+
+.thumbnail
+  width: 30px
+
+.title
+  display: inline-block
+  font-size: 18px
+  position: relative
+  top: -10px
+  left: 20px

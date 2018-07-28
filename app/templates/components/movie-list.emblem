@@ -1,0 +1,17 @@
+
+h3
+  | You searched for -- #{query}
+.row
+  .col-5
+    ul.movie-list
+      each movies as |movie|
+        li click="'showDetails' movie"
+          .list-card
+            img.thumbnail src=movie.thumbnail
+            span.title = movie.title
+            div.release-date
+              | Release Date: #{movie.date}
+
+  if showDetails
+    .col-5
+      = movie-details movie=movie upvote=upvote downvote=downvote

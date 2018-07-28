@@ -6,6 +6,8 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    host: 'https://api.themoviedb.org/3',
+    apiKey: "cb77f4c46731220f29c604cf4e8e415d",
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,6 +22,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    endpoints: {
+      movie: 'search/movie'
     }
   };
 

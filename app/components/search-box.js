@@ -6,9 +6,6 @@ export default Ember.Component.extend({
   page: 1,
   maxOffset: 5,
 
-  postDot: true,
-  preDot: false,
-
   // checking if not first page
   isNotFirstPage: Ember.computed.gt('page', 1),
 

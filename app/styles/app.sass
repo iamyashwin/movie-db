@@ -9,7 +9,7 @@ body, html
 
 [class*="col-"]
   float: left
-  padding: 15px
+  padding: 15px 5px
 .col-1
   width: 8.33%
 .col-2
@@ -57,6 +57,7 @@ button
   text-align: center
   form
     margin-top: -25px
+    margin-left: 120px
     .input
       border: 2px solid #e6e6e6
       width: 200px
@@ -145,13 +146,9 @@ ul.movie-list
   div
     margin-top: 20px
 
-.list-card
-  margin: 10px
-  div
-    margin-top: 10px
-
 .thumbnail
   width: 30px
+  margin-top: -10px
 
 .title
   display: inline-block
@@ -159,3 +156,38 @@ ul.movie-list
   position: relative
   top: -10px
   left: 20px
+
+
+@media only screen and (max-width: 767px)
+  .col-5
+    width: 100%
+    padding: 0px
+  .top-nav
+    height: 150px
+  .main-text
+    text-align: center
+  .form-container
+    form
+      margin-top: 10px
+      margin-left: 0px
+      button
+        margin-top: 10px
+        margin-bottom: 10px
+  .movie-list, ul.movie-list
+    margin-left: 0px
+  .movie-list h3
+    margin-left: 10px
+  .card
+    margin-top: 0px
+    p
+      padding: 10px
+    h1
+      text-align: center
+    p ~ div
+      padding: 10px
+  .movie-list
+    button.paginate
+      width: 50px
+      font-size: 10px
+      &.paginate-numbers
+        width: 20px

@@ -7,8 +7,12 @@ h3
       each movies as |movie|
         li click="'showDetails' movie"
           .list-card
-            img.thumbnail src=movie.thumbnail
-            span.title = movie.title
+            .row
+              .col-1
+                div
+                  img.thumbnail src=movie.thumbnail
+              .col-9
+                div.title = movie.title
             div.release-date
               | Release Date: #{movie.date}
 
